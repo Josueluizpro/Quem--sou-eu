@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o Professor Josué Luiz do Carmo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="foto-perfil.jpg" alt="Foto do Professor Josué Luiz">
+      <h1>Professor Josué Luiz do Carmo</h1>
+      <p>Educador em Matemática, Física e Robótica | Criador de Projetos Educacionais</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="biografia">
+      <h2>Minha História</h2>
+      <p>
+        Sou professor da rede estadual de São Paulo desde 2013, atuando nas disciplinas de Matemática, Física e Robótica. 
+        Ao longo da minha trajetória, busquei unir conhecimento técnico e criatividade, ajudando meus alunos a aprender 
+        de forma prática e inspiradora.
+      </p>
+      <p>
+        Antes de entrar para o magistério, trabalhei na Pirelli como operador de máquinas e fui supervisor de produção no Paraná. 
+        Formado em Engenharia de Produção, com pós-graduação na mesma área, sempre acreditei que a educação transforma vidas — 
+        inclusive a minha.
+      </p>
+      <p>
+        Hoje, dedico-me a ensinar com paixão e a desenvolver projetos que unem ciência, tecnologia e arte. 
+        Meus alunos constroem robôs, maquetes automatizadas, foguetes de garrafa PET e animatronics com Arduino e Micro:bit, 
+        explorando o prazer de aprender fazendo.
+      </p>
+    </section>
+
+    <section class="projetos">
+      <h2>Projetos Educacionais</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Animatronics Escolares</h3>
+          <p>Robôs com movimentos realistas, criados com servomotores e muita criatividade.</p>
+        </div>
+        <div class="card">
+          <h3>Foguete de Garrafa PET</h3>
+          <p>Experimentos com propulsão a ar e água, unindo física e diversão.</p>
+        </div>
+        <div class="card">
+          <h3>Maquete Automatizada</h3>
+          <p>Projetos de automação com Arduino, LEDs e sensores aplicados em miniaturas de cidades.</p>
+        </div>
+        <div class="card">
+          <h3>Ponte de Treliça</h3>
+          <p>Estruturas com palitos de picolé que ensinam resistência, equilíbrio e engenharia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mensagem">
+      <h2>Aos Meus Alunos</h2>
+      <p>
+        Cada projeto é uma conquista. Ver a dedicação, a curiosidade e a alegria de cada aluno me inspira todos os dias.  
+        Agradeço por fazerem parte dessa jornada — juntos estamos construindo um futuro cheio de conhecimento e criatividade.
+      </p>
+    </section>
+
+    <div class="botoes">
+      <a href="https://josueluiz.github.io/portal-de-projetos/" class="botao-voltar">⬅ Voltar ao Portal de Projetos</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Site desenvolvido com dedicação pelo Professor Josué Luiz do Carmo © 2025</p>
+    <p id="contador"></p>
+  </footer>
+
+  <script>
+    // Contador de visualizações simples
+    const contador = localStorage.getItem('visitas-josue') || 0;
+    const novoContador = parseInt(contador) + 1;
+    localStorage.setItem('visitas-josue', novoContador);
+    document.getElementById('contador').textContent = Visualizações: ${novoContador};
+  </script>
+</body>
+</html>
